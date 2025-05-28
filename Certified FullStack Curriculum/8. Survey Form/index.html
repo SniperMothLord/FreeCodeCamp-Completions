@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Burgirmans survey form</h1>
+      <p id="description">Thank you for participating in burgirmans shitty survey</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Sell your personal details to satan</legend>
+        <label for="name" id="name-label">
+          Name
+          <input id="name" type="text" placeholder="fuck off timmy" required>
+        </label>
+        <br>
+        <label for="email" id="email-label">
+          Email
+          <input id="email" type="email" placeholder="your shitty emails name" required>
+        </label>
+        <br>
+        <label for="number" id="number-label">
+          Age
+          <input id="number" type="number" min="0" max="120" placeholder="years before doom" required>
+        </label>
+        <br>
+        <label for="dropdown" id="gender-label">
+          Gender
+          <select id="dropdown">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="helicopter">Helicopter</option>
+          </select>
+        </label>
+        <br>
+        <label for="secret" id="secret-label">
+          Your deepest darkest secret
+          <textarea id="secret"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What you liked about burgirmans</legend>
+        <section>
+          <p>Did you like the burgirmans?</p>
+          <label>
+            Yes
+            <input type="radio" name="liked-it-or-not" value="yes" checked>
+          </label>
+          <br>
+          <label>
+            Yes
+            <input type="radio" name="liked-it-or-not" value="no">
+        </section>
+        <br>
+        <section>
+          <p>What aspects did you like about burgirmans?</p>
+          <label>
+            <input type="checkbox" name="burgir-like" value="burgir">
+            burgir
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="burgirman-like" value="burgirman">
+            burgirman
+          </label>
+          <br>
+          <label>
+            <input type="checkbox" name="kebab-like" value="kebab">
+            kebab, yok not burgir
+          </label>
+        </section>
+        <section>
+          <p>Anything else you want to feedback to us?</p>
+          <textarea placeholder="all sinners will be punished"></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
