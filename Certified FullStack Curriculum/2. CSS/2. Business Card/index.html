@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="business-card">
+        <img class="profile-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD-q8aLq9690Q5b-O_PGzvK5RFbeSu6UDKxA&s" alt="this is my stupid ass">
+        <p class="full-name">Jalo Hiltunen</p>
+        <p class="designation">Wannabe evil programmer</p>
+        <p class="company">No company to work at :(</p>
+        <hr>
+        <p>jalohiltunen@gmail.com</p>
+        <p>+358394875845</p>
+        <a href="https://github.com/SniperMothLord">Portfolio</a>
+        <hr>
+        <div class="social-media">
+            <h2>Connect with me</h2>
+            <div class="social-media-icons">
+                <div class="social-media-icon">
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://media.tenor.com/DUHB3rClTaUAAAAe/no-pernalonga.png">Twitter</a>
+                </div>
+                <div class="social-media-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/jalo-hiltunen-71a36631b">LinkedIn</a>
+                </div>
+                <div class="social-media-icon">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/SniperMothLord">GitHub</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
+    <script>
+        var generateStars = function(){
+        
+            var $galaxy = $(".business-card");
+            var iterator = 0;
+            
+            while (iterator <= 100){
+                var xposition = Math.random();
+                var yposition = Math.random();
+                var star_type = Math.floor((Math.random() * 3) + 1);
+                var position = {
+                    "x" : $galaxy.width() * xposition,
+                    "y" : $galaxy.height() * yposition,
+                };
+                
+                $('<div class="star star-type' + star_type + '"></div>').appendTo($galaxy).css({
+                    "top" : position.y,
+                    "left" : position.x
+                });
+                
+                iterator++;
+            }
+            
+        };
+
+        generateStars();
+    </script>
+</body>
+
+</html>
