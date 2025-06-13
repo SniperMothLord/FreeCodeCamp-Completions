@@ -1,0 +1,40 @@
+body{
+  background-color: #C11C84;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+h1, .todo-list{
+   background-color: purple;
+   padding: 10px;
+   border: 5px solid white;
+   border-radius: 20px; 
+}
+
+.todo-list > li{
+  list-style: none;
+  margin: 20px auto;
+  background: linear-gradient(purple, black);
+  color: white;
+  padding: 20px 5px;
+  border-radius: 10px;
+  border: 5px white solid;
+
+}
+a{
+  color: pink;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
+a:active{
+  color: white;
+}
+a:visited{
+  color: red;
+}
+a:focus{
+  outline: 2px solid #000;
+}
