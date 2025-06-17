@@ -1,0 +1,33 @@
+
+body{
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 70vw;
+  min-height: calc(100vh - 100px);
+}
+header{
+  margin: 0 auto;
+  text-align: center;
+  
+}
+img{
+  margin: 0 auto;
+  width: 50%;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+hr{
+  width: 80%;
+}
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+section{
+  width: 30%;
+}
+footer{
+  text-align: center;
+}
