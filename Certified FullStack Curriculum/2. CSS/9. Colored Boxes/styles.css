@@ -1,0 +1,42 @@
+body{
+  background-color: #f4f4f4;
+}
+h1{
+  text-align: center;
+  background-image: linear-gradient(to left, violet, indigo, green, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+}
+.color-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.color-box{
+  width: 10vw;
+  height: 10vw;
+  background-color: black;
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+.color-box:hover{
+  width: 12vw;
+  height: 12vw;
+  border: 5px solid red;
+}
+.color1{
+  background-color: #589403;
+}
+.color2{
+  background-color: rgb(234, 123, 244);
+}
+.color3{
+  background-color: tomato;
+}
+.color4{
+  background-color: hsl(0, 80%, 30%);
+}
+.color5{
+  background-color: burlywood;
+}
