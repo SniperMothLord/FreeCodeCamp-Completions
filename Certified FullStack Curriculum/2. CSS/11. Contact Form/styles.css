@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  color: pink;
+}
+.form-container{
+  background-color: #8a215c;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px auto;
+  width: 70%;
+}
+.part{
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+label{
+  margin: 0;
+  color: white;
+  border-bottom: 2px solid white;
+  margin-bottom: 2px;
+  width: 100%;
+}
+input, textarea{
+  width: 100%;
+  padding: 0;
+  margin-bottom: 5px;
+  background-color: pink;
+  border: 2px solid pink;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid pink;
+  font-size: 18px;
+  background-color: pink;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  transition-duration: 0.2s;
+}
+button:hover{
+  transform: scale(1.05);
+  background-color: orange;
+}

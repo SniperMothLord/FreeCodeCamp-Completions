@@ -1,0 +1,39 @@
+body{
+  background-color: #003153;
+}
+#email{
+  padding: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid red;
+  box-sizing: border-box;
+  background: url("https://plus.unsplash.com/premium_photo-1675695700239-44153e6bf430?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fHww")
+}
+#confidential, #top-secret{
+  display: inline-block;
+  padding: 20px;
+  margin-left: 10px;
+  border: 2px solid red;
+}
+.blurred{
+  filter: blur(3px);
+}
+#confidential{
+  position: relative;
+  top: 40px;
+  color: red;
+  font-weight: 700;
+  border: 5px solid red;
+  transform: rotate(-10deg);
+}
+#top-secret{
+  position: relative;
+  top: 400px;
+  color: red;
+  font-weight: 700;
+  border: 5px solid red;
+  transform: rotate(15deg) scale(1.4);
+  
+}
+
